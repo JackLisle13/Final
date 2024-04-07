@@ -77,7 +77,7 @@ public class Main {
         }
         for(int i = 0; i < keysZ.length; i++){
             tiles.add(keysZ[i]);
-        }
+        }//
         panel.add(new JLabel());
 
 
