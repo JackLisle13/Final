@@ -9,7 +9,17 @@ public class Main {
         JFrame frame = new JFrame();
         frame.setSize(400,600);
         //frame.setResizable(false);
-        frame.setVisible(true);
+
+        JFrame firstFrame = new JFrame();
+        firstFrame.setSize(400,600);
+        JPanel openingScreen = new JPanel();
+        openingScreen.setBackground(new Color(150,165,215));
+        openingScreen.add(new JLabel("Termle"));
+        openingScreen.add(new JTextField("Enter your word"));
+        firstFrame.add(openingScreen);
+        firstFrame.setVisible(false);
+
+
 
         JPanel panel = new JPanel();
         frame.add(panel);
@@ -47,13 +57,15 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
                 if(boxes[0][0].getText().length()== 1){
                     System.out.println(boxes[0][0].getText());
-                    boxes[0][0].set
+                    //boxes[0][0].set
                 }
             }
         });
 
 
 
+
+        frame.setVisible(true);
 
     }
 }
