@@ -6,6 +6,8 @@ import java.awt.event.ActionListener;
 public class Main {
     public static void main(String[] args) {
 
+        String tempWord = "sound";
+
         JFrame frame = new JFrame();
         frame.setSize(400,600);
         //frame.setResizable(false);
@@ -57,7 +59,9 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
                 if(boxes[0][0].getText().length()== 1){
                     System.out.println(boxes[0][0].getText());
-                    //boxes[0][0].set
+                }
+                else{
+                    boxes[0][0].setText("");
                 }
             }
         });
